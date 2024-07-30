@@ -94,8 +94,8 @@ vector<int> ArrayLeaders(vector<int> arr)
 int main()
 {
     // vector<int> arr = {16, 17, 4, 3, 5, 2};
-    vector<int> arr = {10, 4, 2, 4, 1};
-    // vector<int> arr = {30, 10, 10, 5};
+    // vector<int> arr = {10, 4, 2, 4, 1};
+    vector<int> arr = {30, 10, 10, 5};
 
     vector<int> res = ArrayLeaders(arr);
 
