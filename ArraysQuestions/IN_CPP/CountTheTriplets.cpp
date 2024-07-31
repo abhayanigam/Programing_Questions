@@ -77,7 +77,8 @@ int CountTheTriplets(vector<int> arr)
 
 int main()
 {
-    vector<int> arr = {1, 5, 3, 2};
+    // vector<int> arr = {1, 5, 3, 2};
+    vector<int> arr = {-1, 0, 1, 2, -1, -4};
     // vector<int> arr = {2, 3, 4};
 
     cout << "There are " << CountTheTriplets(arr) << " triplets" << endl;
