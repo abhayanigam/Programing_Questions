@@ -26,7 +26,11 @@ void LeftAndRightSide(vector<int> arr)
 
 int main()
 {
-    vector<int> arr = {1, 3, 5, 2, 2};
+    // vector<int> arr = {1, 3, 5, 2, 2};
+    // vector<int> arr = {11, 9, 12};
+    // vector<int> arr = {4, 2, 5, 7};
+    // vector<int> arr = {4, 3, 7, 8, 6, 2, 1};
+    vector<int> arr = {4, 7, 3, 8, 2};
 
     LeftAndRightSide(arr);
 }

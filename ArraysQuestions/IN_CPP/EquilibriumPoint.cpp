@@ -61,8 +61,8 @@ int EquilibriumPoint(vector<int> arr)
 int main()
 {
     // vector<int> arr = {1, 3, 5, 2, 2};
-    // vector<int> arr = {1, 3, 5, 2, 1, 3};
-    vector<int> arr = {1};
+    vector<int> arr = {1, 3, 5, 2, 1, 3};
+    // vector<int> arr = {1};
     // vector<int> arr = {-7, 1, 5, 2, -4, 3, 0};
 
     cout << EquilibriumPoint(arr) << endl;

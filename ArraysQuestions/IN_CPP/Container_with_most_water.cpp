@@ -20,11 +20,11 @@
 */
 
 #include <iostream>
-#include <heightector>
+#include <vector>
 using namespace std;
 
 // Time complexity O(n^2)
-int maxArea1(heightector<int> &height)
+int maxArea1(vector<int> &height)
 {
     int area = 0;
     for (int i = 0; i < height.size(); i++)
@@ -39,7 +39,7 @@ int maxArea1(heightector<int> &height)
 }
 
 // Time Complexity O(n)
-int maxArea2(heightector<int> height)
+int maxArea2(vector<int> height)
 {
     int left = 0, right = height.size() - 1;
     int area = 0;
@@ -62,7 +62,7 @@ int maxArea2(heightector<int> height)
 
 int main()
 {
-    heightector<int> height;
+    vector<int> height;
     height.push_back(1);
     height.push_back(8);
     height.push_back(6);
