@@ -59,17 +59,38 @@ void merge(vector<int> &nums1, int m, vector<int> &nums2, int n)
     cout << endl;
 }
 
+// For O(m+n) time Complexity
+void merge2(vector<int> &nums1, int m, vector<int> &nums2, int n)
+{
+    int i = m - 1, j = n - 1, k = m + n - 1;
+
+    while (j >= 0)
+    {
+        if (i >= 0 && nums1[i] > nums2[j])
+        {
+            nums1[k--] = nums1[i--];
+        }
+        else
+        {
+            nums1[k--] = nums2[j--];
+        }
+    }
+}
+
 int main()
 {
     vector<int> nums1 = {1, 2, 3, 0, 0, 0}, nums2 = {2, 5, 6};
     int m = 3, n = 3;
     merge(nums1, m, nums2, n);
+    merge2(nums1, m, nums2, n);
 
     vector<int> nums11 = {1}, nums22 = {};
     int m1 = 1, n1 = 0;
     merge(nums11, m1, nums22, n1);
+    merge2(nums11, m1, nums22, n1);
 
     vector<int> nums111 = {0}, nums222 = {1};
     int m11 = 0, n11 = 1;
     merge(nums111, m11, nums222, n11);
+    merge2(nums111, m11, nums222, n11);
 }
