@@ -30,7 +30,8 @@ int main()
     // vector<int> arr = {11, 9, 12};
     // vector<int> arr = {4, 2, 5, 7};
     // vector<int> arr = {4, 3, 7, 8, 6, 2, 1};
-    vector<int> arr = {4, 7, 3, 8, 2};
+    // vector<int> arr = {4, 7, 3, 8, 2};
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
 
     LeftAndRightSide(arr);
 }
